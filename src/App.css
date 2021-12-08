@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(12, 16, 71);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+.container {
+  width: 78vw;
+  height: 80vh;
+  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar */
+.sidebar {
+  background-color: rgb(230, 230, 247);
+  grid-column: 1 / span 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+  border-left: 5px solid rgb(126, 7, 7);
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-container {
+  background-color: white;
+  grid-column: 2 / span 3;
+  height: 100%;
+  padding: 3%;
+  height: inherit;
+}
+
+.label {
+  padding-bottom: 3%;
+}
+
+.plugin-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.plugin {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 5px;
+  padding: 9px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.plugin-info {
+  grid-column: 1 / span 5;
+}
+
+.plugin-title {
+  padding-bottom: 17px;
+}
+
+.plugin-btn {
+  height: fit-content;
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 15px 27px;
+  margin: 0;
+}
+
+.name-tabs h1 {
+  font-size: 26px;
+  font-weight: 100;
+  padding: 12px;
+  margin-left: 15px;
+}
+
+ul li a:visited {
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.toggle-plugins {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.toggle-plugins p {
+  padding: 17px 25px;
+}
+
+.toggle-input {
+  padding-top: 12px;
+  padding-right: 20%;
 }
