@@ -22,7 +22,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  background-color: rgb(230, 230, 247);
+  background-color: rgb(197, 197, 197);
   grid-column: 1 / span 1;
   display: flex;
   flex-direction: column;
